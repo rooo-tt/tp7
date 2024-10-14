@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         .conteiner {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: baseline;
+
         }
 
         .img {
             height: 50px;
             display: flex;
             justify-content: left;
+            border-right: 2px solid grey;
+
         }
+        .box {
+
+            display: flex;
+            flex-wrap: wrap;
+            text-transform: uppercase; /*  transforma el texto: mayúsc */
+            align-items: center;
+            gap: 10px;
+            border:  3px dotted grey;
+            
+        }
+        
     </style>
 </head>
 
-<body>
+<body >
     <div class="conteiner">
 
-        <div class="img"><img src="./assets/moto.webp" alt="camioncito"></div>
-        <div>envios a todo el pais y retiro por sucursales andrani</div>
+        <div class="box">
+            <div class="img"><img src="./assets/moto.webp" alt="camioncito"></div>
+            <div> envios a todo el pais y retiro por sucursales andrani    </div>
+        </div>
 
+        <div class="box">
+            <div class="img"><img src="./assets/lll.webp" alt="tarjeta"></div>
+            <div>paga con 2 tarjetas de credito o debito    </div>
+        </div>
 
-        <div class="img"><img src="./assets/lll.webp" alt="tarjeta"></div>
-        <div>paga con 2 tarjetas de credito o debito</div>
-
-        <div class="img"><img src="./assets/mm.webp" alt="loguito ubicacion"></div>
-        <div>retira gratis en 2 horas en nuestros flagship store</div>
+        <div class="box">
+            <div class="img"><img src="./assets/mm.webp" alt="loguito ubicacion"></div>
+            <div>retira gratis en 2 horas en nuestros flagship store</div>
+        </div>
 
     </div>
 </body>
