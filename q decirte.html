@@ -26,12 +26,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px;
 
 
         }
 
         .si {
             display: flex;
+            justify-content: center;
             gap: 10px;
             list-style: none;
             
@@ -45,14 +47,35 @@
             display: flex;
             align-items: center;
         }
-        #b{
-            display: flex;
+        #b{ display: flex;
+            justify-content: space-between; 
             align-items: center;
+            padding: 0 20px;
 
         }
         #eee{
             display: flex;
             justify-content: center;
+            
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .buscador {
+            border-radius: 20px;
+            background-color: rgba(209, 206, 206, 0.864);
+            padding: 10px;
+            margin-right: 12px;
+        }
+        input {
+            border: none;
+            background-color: rgba(209, 206, 206, 0.864);
+        }
+        .improductos{
+            height: 500px;
+        }
+        main{
             
         }
     </style>
@@ -89,8 +112,85 @@
                 <li><a href=""><b>glam days</b></a></li>
             </ul>
         </nav>
+        <div style="display: flex; align-items: center;">
+            <div class="buscador">
+                <img src="./assets/search.png" alt="logo" height="16px" >
+                <input type="search" placeholder="buscar" >
+            </div>
+            <img src="./assets/briefcase-blank (1).png" alt="bag" height="18px">
+        </div>
         </div>
     </header>
+    <main>
+    <div style="display: flex; flex-direction: row;">
+        <div>
+            <div > 
+                <img src="./assets/pelota.webp" alt="pelota" class="improductos">
+            </div>
+            <div>
+                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                <p><b>Premier League Academy</b></p>
+                <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
+                <p><b>$69.999</b></p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="./assets/mochila.png" alt="mochila" class="improductos">
+            </div>
+            <div>
+                <p style="color: rgb(98, 13, 13);">lo nuevo </p>
+                <p><b>Jan</b></p>
+                <p style="color: rgb(99, 99, 99);">Mochila Jordan para Niño/a</p>
+                <p><b>$52.999</b></p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="./assets/pelota dos.webp" alt="pelota" class="improductos">
+            </div>
+            <div>
+                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                <p><b>Premier League Flight</b></p>
+                <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
+                <p><b>$239.999</b></p>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row;" >
+        <div>
+            <div>
+                <img src="./assets/pelota 3.webp" alt="pelota" class="improductos">
+            </div>
+            <div>
+                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                <p><b>Nike Futsal Pro</b></p>
+                <p style="color: rgb(99, 99, 99);">Pelota de Futsal Unisex</p>
+                <p><b>$84.999</b></p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="./assets/gorra.webp" alt="gorra" class="improductos">
+            </div>
+            <div>
+                <p><b>Nike DriFIT Rise</b></p>
+                <p style="color: rgb(99, 99, 99);">Gorro de Moda Unisex</p>
+                <p ><b>$51.500</b></p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="./assets/vincha.png" alt="vincha" class="improductos">
+            </div>
+            <div>
+                <p><b>Nike Fury</b></p>
+                <p style="color: rgb(99, 99, 99);">Vincha de Entrenamiento para Mujer</p>
+                <p><b>$39.000</b></p>
+            </div>
+        </div>
+     </div>
+    </main>
 </body>
 
 </html>
