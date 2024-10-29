@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ayuda</title>
-    <style>
-        #dd {
-            background-color: black;
-            height: 40px;
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    <style> /* codigo css*/
+        #dd { /*parte deñ header*/
+            background-color: black; /*color de fondo*/
+            height: 40px; /*altura*/
+            color: whitesmoke; /*color de letra*/
+            display: flex; 
+            justify-content: center; /*para que quede el contenido en el medio*/
+            align-items: center; /*para que quede alineado*/
         }
 
-        .logo {
+        .logo { /*el logo del header*/
             display: flex;
             justify-content: left;
             align-items: start;
         }
 
-        #hh {
+        #hh { /*jprdan petit*/
             background-color: rgba(209, 206, 206, 0.864);
             display: flex;
             justify-content: space-between;
@@ -31,65 +31,125 @@
 
         }
 
-        .si {
+        .si { 
             display: flex;
             justify-content: center;
             gap: 10px;
             list-style: none;
-            
+
         }
+
         .list {
             padding-right: 10px;
             border-right: 2px solid black;
         }
+
         #a {
-            padding-left: 10px ;
+            padding-left: 10px;
             display: flex;
             align-items: center;
         }
-        #b{ display: flex;
-            justify-content: space-between; 
+
+        #b {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 0 20px;
+            background-color: aliceblue;
 
         }
-        #eee{
+
+        #eee {
             display: flex;
             justify-content: center;
-            
+
         }
+
         a {
             text-decoration: none;
             color: black;
         }
+
         .buscador {
             border-radius: 20px;
             background-color: rgba(209, 206, 206, 0.864);
             padding: 10px;
             margin-right: 12px;
         }
+
         input {
             border: none;
             background-color: rgba(209, 206, 206, 0.864);
         }
-        .improductos{
+
+        .improductos {
             height: 500px;
         }
-        main{
-            
+
+        footer {
+            background-color: black;
+            color: azure;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .gris {
+            color: gray;
+        }
+
+        .fix { /*para que el header quede fijo*/ 
+            padding-bottom: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+
+        .wfijo { /*logo de wsp*/
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .textf { /*texto final del foooter*/ 
+            display: flex;
+            align-items: center;
+        }
+
+        .listf { /*lista del footer*/
+            display: flex;
+            color: gray;
+            gap: 10px;
+            list-style: none;
+        }
+        .listaf{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+        }
+        .finf{ /*parte final de footer*/
+            border-top: 1px solid rgba(195, 195, 195, 0.718);
+            display: flex;
+            justify-content: space-between;    
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="fix" style="border-bottom: 1px solid black"> /*la parte de arriba*/
         <div id="dd">
             6 coutas sin interes en todo el sitio
         </div>
         <div id="hh">
             <div id="a"><img src="./assets/jorditan.svg" alt="jordan petit" height="30px"></div>
             <nav>
-                <ul class="si">
+                <ul class="si"> /*el menu del header*/
                     <li class="list"><a href=""><b>suscribite</b></a></li>
                     <li class="list"><a href=""><b>buscar tienda</b></a></li>
                     <li class="list"><a href=""><b>eventos</b></a></li>
@@ -98,99 +158,196 @@
             </nav>
 
         </div>
+
         <div id="b">
-        <div id="a">
-            <div class="logo"><img src="./assets/naik.svg" alt="logo nike" height="50px"></div>
-        </div>
-        <nav id="eee">
-            <ul class="si" >
-                <li><a href=""><b>running</b></a></li>
-                <li><a href=""><b>hombre</b></a></li>
-                <li><a href=""><b>mujer</b></a></li>
-                <li><a href=""><b>niño/a</b></a></li>
-                <li><a href=""><b>accesorios</b></a></li>
-                <li><a href=""><b>glam days</b></a></li>
-            </ul>
-        </nav>
-        <div style="display: flex; align-items: center;">
-            <div class="buscador">
-                <img src="./assets/search.png" alt="logo" height="16px" >
-                <input type="search" placeholder="buscar" >
+            <div id="a">
+                <div class="logo"><img src="./assets/naik.svg" alt="logo nike" height="50px"></div>
             </div>
-            <img src="./assets/briefcase-blank (1).png" alt="bag" height="18px">
-        </div>
+            <nav id="eee">
+                <ul class="si">
+                    <li><a href=""><b>running</b></a></li>
+                    <li><a href=""><b>hombre</b></a></li>
+                    <li><a href=""><b>mujer</b></a></li>
+                    <li><a href=""><b>niño/a</b></a></li>
+                    <li><a href=""><b>accesorios</b></a></li>
+                    <li><a href=""><b>glam days</b></a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center;">
+                <div class="buscador">
+                    <img src="./assets/search.png" alt="logo" height="16px">
+                    <input type="search" placeholder="buscar">
+                </div>
+                <img src="./assets/briefcase-blank (1).png" alt="bag" height="18px">
+            </div>
         </div>
     </header>
-    <main>
-    <div style="display: flex; flex-direction: row;">
-        <div>
-            <div > 
-                <img src="./assets/pelota.webp" alt="pelota" class="improductos">
+
+/*main: como el cuerpo de la gueb*/ 
+    <main style="margin-top: 160px;">
+        <div style="padding-top: 10px;">
+            <div style="display: flex; justify-content: left;">
+                productos
             </div>
-            <div>
-                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
-                <p><b>Premier League Academy</b></p>
-                <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
-                <p><b>$69.999</b></p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="./assets/mochila.png" alt="mochila" class="improductos">
-            </div>
-            <div>
-                <p style="color: rgb(98, 13, 13);">lo nuevo </p>
-                <p><b>Jan</b></p>
-                <p style="color: rgb(99, 99, 99);">Mochila Jordan para Niño/a</p>
-                <p><b>$52.999</b></p>
+            <div style="display: flex; justify-content: right; align-items: center;">
+                <div style="display: flex; align-items: center;">
+                    ocultar filtros
+                    <img src="./assets/settings-sliders.png" alt="" width="20 px">
+                </div>
+                <div>
+                    ordenar por mas reciente
+                    <img src="./assets/" alt="">
+                </div>
             </div>
         </div>
-        <div>
+
+        /*la parte de los productos c: */
+        <div style="display: flex; justify-content: space-between;flex-direction: row;">
+
             <div>
-                <img src="./assets/pelota dos.webp" alt="pelota" class="improductos">
+                <div>
+                    <img src="./assets/pelota.webp" alt="pelota" class="improductos">
+                </div>
+                <div>
+                    <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                    <p><b>Premier League Academy</b></p>
+                    <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
+                    <p><b>$69.999</b></p>
+                </div>
             </div>
             <div>
-                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
-                <p><b>Premier League Flight</b></p>
-                <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
-                <p><b>$239.999</b></p>
-            </div>
-        </div>
-    </div>
-    <div style="display: flex; flex-direction: row;" >
-        <div>
-            <div>
-                <img src="./assets/pelota 3.webp" alt="pelota" class="improductos">
+                <div>
+                    <img src="./assets/mochila.png" alt="mochila" class="improductos">
+                </div>
+                <div>
+                    <p style="color: rgb(98, 13, 13);">lo nuevo </p>
+                    <p><b>Jan</b></p>
+                    <p style="color: rgb(99, 99, 99);">Mochila Jordan para Niño/a</p>
+                    <p><b>$52.999</b></p>
+                </div>
             </div>
             <div>
-                <p style="color: rgb(98, 13, 13);">lo nuevo</p>
-                <p><b>Nike Futsal Pro</b></p>
-                <p style="color: rgb(99, 99, 99);">Pelota de Futsal Unisex</p>
-                <p><b>$84.999</b></p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="./assets/gorra.webp" alt="gorra" class="improductos">
-            </div>
-            <div>
-                <p><b>Nike DriFIT Rise</b></p>
-                <p style="color: rgb(99, 99, 99);">Gorro de Moda Unisex</p>
-                <p ><b>$51.500</b></p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="./assets/vincha.png" alt="vincha" class="improductos">
-            </div>
-            <div>
-                <p><b>Nike Fury</b></p>
-                <p style="color: rgb(99, 99, 99);">Vincha de Entrenamiento para Mujer</p>
-                <p><b>$39.000</b></p>
+                <div>
+                    <img src="./assets/pelota dos.webp" alt="pelota" class="improductos">
+                </div>
+                <div>
+                    <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                    <p><b>Premier League Flight</b></p>
+                    <p style="color: rgb(99, 99, 99);">Pelota de Fútbol Unisex</p>
+                    <p><b>$239.999</b></p>
+                </div>
             </div>
         </div>
-     </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between">
+            <div>
+                <div>
+                    <img src="./assets/pelota 3.webp" alt="pelota" class="improductos">
+                </div>
+                <div>
+                    <p style="color: rgb(98, 13, 13);">lo nuevo</p>
+                    <p><b>Nike Futsal Pro</b></p>
+                    <p style="color: rgb(99, 99, 99);">Pelota de Futsal Unisex</p>
+                    <p><b>$84.999</b></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./assets/gorra.webp" alt="gorra" class="improductos">
+                </div>
+                <div>
+                    <p><b>Nike DriFIT Rise</b></p>
+                    <p style="color: rgb(99, 99, 99);">Gorro de Moda Unisex</p>
+                    <p><b>$51.500</b></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./assets/vincha.png" alt="vincha" class="improductos">
+                </div>
+                <div>
+                    <p><b>Nike Fury</b></p>
+                    <p style="color: rgb(99, 99, 99);">Vincha de Entrenamiento para Mujer</p>
+                    <p><b>$39.000</b></p>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+    /*futer*/ 
+    <footer>
+        <div class="listaf"> /*lista futer*/ 
+            <ul>
+                <li><a href=""><b>BUSCAR TIENDA</b></a></li>
+                <li><a href=""><b>SUMATE A LA COMUNIDAD</b></a></li>
+                <li><a href=""><b>SEGUÍ TU PEDIDO</b></a></li>
+            </ul>
+            <ul>
+                <li><a href=""><b>AYUDA</b></a></li>
+                <li><a class="gris" href="">envios y entregas</a></li>
+                <li><a class="gris" href="">devolucion</a></li>
+                <li><a class="gris" href="">cambios</a></li>
+                <li><a class="gris" href="">autogestionar mi devolucion</a></li>
+                <li><a class="gris" href="">opciones de pago</a></li>
+                <li><a class="gris" href="">conectate</a></li>
+                <li><a class="gris" href="">defensa al consumidor</a></li>
+                <li><a class="gris" href="">libro de quejas online</a></li>
+                <li><a href=""><b>BOTON DE ARREPENTIMIENTO</b></a></li>
+                <li><a class="gris" href=""><u>ver todos</u></a></li>
+            </ul>
+            <ul>
+                <li><a href=""><b>ACERCA DE NIKE</b></a></li>
+                <li><a class="gris" href="">proposito</a></li>
+                <li><a class="gris" href="">noticias</a></li>
+            </ul>
+            <ul>
+                <li><a href=""><b>NOVEDADES NIKE</b></a></li>
+                <li><a class="gris" href="">encontra tu calzado</a></li>
+                <li><a class="gris" href="">¿como elegir tu top?</a></li>
+                <li><a class="gris" href="">tips saludables</a></li>
+                <li><a class="gris" href="">promociones</a></li>
+            </ul>
+
+            /*logos*/
+            <div style="display: flex; gap: 20px; padding-top: 30px;">
+
+                <div>
+                    <img src="./assets/3b08c03e-be05-49c1-9579-193190c40b2e___d5b5ce1ab2c443765cd3beb7183e1cae.webp"
+                        alt="" height="40px">
+                </div>
+                <div style="gap: 11px;">
+                    <a href=""><img src="./assets/twitter.png" alt="" height="30px"></a>
+                    <a href=""><img src="./assets/communication.png" alt="" height="30px"></a>
+                    <a href=""><img src="./assets/instagram (1).png" alt="" height="30px"></a>
+                    <a href=""><img src="./assets/social (1).png" alt="" height="30px"></a>
+                </div>
+
+            </div>
+
+            /*fin del futer*/ 
+        </div>
+        <div class="finf">
+            <div class="textf">
+                <img src="./assets/gps.png" alt="">
+                <p><b>Argentina</b></p>
+                <p style="color:rgb(99, 99, 99);">© 2023 Southbay S.R.L. Todos los derechos reservados.
+                </p>
+            </div>
+            <div>
+                <ul class="listf">
+                    <li>Hot Sale</li>
+                    <li>Términos y Condiciones</li>
+                    <li>Política de privacidad y cookies</li>
+                </ul>
+            </div>
+        </div>
+
+        /*wsp*/ 
+        <div class="wfijo">
+            <a href=""><img src="./assets/whatsapp.png" alt="" width="50px"></a>
+        </div>
+
+    </footer>
 </body>
 
 </html>
